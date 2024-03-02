@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Directorio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <div class="container-fluid my-5 text-center" id="main-container">
+    <div class="row">
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+        <div class="row my-3 mx-auto">
+          <div class="title-bar title-bar-bgcolor"><a href="docs/portafolio-base-datos.pdf" target="_blank">Portafolio Base de Datos en PDF</a></div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+        <div class="row my-3 mx-auto">
+          <div class="title-bar title-bar-bgcolor">
+            <select class="form-select" aria-label="Categorías" id="categorias">
+              <option value="Todas las categorias">Categorías</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+        <div class="row my-3 mx-auto">
+          <div class="title-bar title-bar-bgcolor">
+            <select class="form-select" aria-label="Subcategorias" id="subcategorias">
+              <option value="Todas las subcategorias">Subcategorías</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <div class="row" id="elements-list-container">
+      <!-- 1. card -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" category="VideoJuegos" subcategory="MMORPG">
+        <div class="row mt-3 mb-2 mx-auto">
+          <div class="carrousel-container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/1.carpeta/Imagen1.jpg" class="d-block w-100" alt="..." href="imgs/1.carpeta/Imagen1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/1.carpeta/Imagen2.jpg" class="d-block w-100" alt="..." href="imgs/1.carpeta/Imagen2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/1.carpeta/imagen3.jpg" class="d-block w-100" alt="..." href="imgs/1.carpeta/imagen3.jpg">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <div class="carrousel-bottom-container">
+                <div class="left"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carrousel-mid-bar">
+          <div class="sn ig"><a href=""><i class="fa fa-instagram" ></i></a></div>
+          <div class="sn fb"><a href=""><i class="fa fa-facebook-f"></i></a></div>
+          <div class="sn wp"><a href=""><i class="fa fa-whatsapp"></a></i></div>
+          <div class="ln cc"><a href="">Sitio Web</a></div>
+        </div>
+        <div class="carrousel-low-box">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero earum error a fugit at tempore adipisci vero numquam, 
+            voluptatibus nam reiciendis perspiciatis alias cumque facilis distinctio magnam. Quidem fuga autem voluptatem quisquam 
+            molestias maxime corporis nihil magni obcaecati saepe. Eveniet!
+          </p>
+        </div>
+      </div>
+      <!-- 2. card -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" category="Música" subcategory="Rock">
+        <div class="row mt-3 mb-2 mx-auto">
+          <div class="carrousel-container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/2.carpeta/Imagen1.jpg" class="d-block w-100" alt="..." href="imgs/2.carpeta/Imagen1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/2.carpeta/Imagen2.jpg" class="d-block w-100" alt="..." href="imgs/2.carpeta/Imagen2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/2.carpeta/imagen3.jpg" class="d-block w-100" alt="..." href="imgs/2.carpeta/imagen3.jpg">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <div class="carrousel-bottom-container">
+                <div class="left"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carrousel-mid-bar">
+          <div class="sn ig"><a href=""><i class="fa fa-instagram" ></i></a></div>
+          <div class="sn fb"><a href=""><i class="fa fa-facebook-f"></i></a></div>
+          <div class="sn wp"><a href=""><i class="fa fa-whatsapp"></a></i></div>
+          <div class="ln cc"><a href="">Sitio Web</a></div>
+        </div>
+        <div class="carrousel-low-box">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, incidunt? Iusto aspernatur deleniti commodi ullam iure vero 
+            voluptatibus et veritatis suscipit doloribus impedit tempora id aperiam in magni similique atque, quidem, illum obcaecati 
+            ipsum explicabo quibusdam, magnam quos porro. Tempore?
+          </p>
+        </div>
+      </div>
+      <!-- 3. card -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" category="Peliculas" subcategory="Acción">
+        <div class="row mt-3 mb-2 mx-auto">
+          <div class="carrousel-container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/3.carpeta/Imagen1.jpg" class="d-block w-100" alt="..." href="imgs/3.carpeta/Imagen1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/3.carpeta/Imagen2.jpg" class="d-block w-100" alt="..." href="imgs/3.carpeta/Imagen2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/3.carpeta/imagen3.jpg" class="d-block w-100" alt="..." href="imgs/3.carpeta/imagen3.jpg">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <div class="carrousel-bottom-container">
+                <div class="left"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carrousel-mid-bar">
+          <div class="sn ig"><a href=""><i class="fa fa-instagram" ></i></a></div>
+          <div class="sn fb"><a href=""><i class="fa fa-facebook-f"></i></a></div>
+          <div class="sn wp"><a href=""><i class="fa fa-whatsapp"></a></i></div>
+          <div class="ln cc"><a href="">Sitio Web</a></div>
+        </div>
+        <div class="carrousel-low-box">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio animi totam architecto nemo quam libero praesentium sequi 
+            sed incidunt ullam iure quo, minus unde aspernatur corrupti! Nobis possimus numquam, voluptas et assumenda minima! Dolor, iusto 
+            architecto! Ex cumque tempore quaerat!
+          </p>
+        </div>
+      </div>
+      <!-- 4. card  -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" category="Literatura" subcategory="Novela">
+        <div class="row mt-3 mb-2 mx-auto">
+          <div class="carrousel-container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/4.carpeta/Imagen1.jpg" class="d-block w-100" alt="..." href="imgs/4.carpeta/Imagen1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/4.carpeta/Imagen2.jpg" class="d-block w-100" alt="..." href="imgs/4.carpeta/Imagen2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/4.carpeta/imagen3.jpg" class="d-block w-100" alt="..." href="imgs/4.carpeta/imagen3.jpg">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <div class="carrousel-bottom-container">
+                <div class="left"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carrousel-mid-bar">
+          <div class="sn ig"><a href=""><i class="fa fa-instagram" ></i></a></div>
+          <div class="sn fb"><a href=""><i class="fa fa-facebook-f"></i></a></div>
+          <div class="sn wp"><a href=""><i class="fa fa-whatsapp"></a></i></div>
+          <div class="ln cc"><a href="">Sitio Web</a></div>
+        </div>
+        <div class="carrousel-low-box">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut doloremque quibusdam eveniet illum molestias. Maxime, quaerat 
+            repellendus! Temporibus, vel non magni officia maiores nam, dolorem placeat iure enim amet, atque nihil nemo praesentium excepturi 
+            pariatur! Nobis dolores unde obcaecati!
+          </p>
+        </div>
+      </div>
+      <!-- 5. card  -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" category="VideoJuegos" subcategory="ARPG">
+        <div class="row mt-3 mb-2 mx-auto">
+          <div class="carrousel-container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/5.carpeta/Imagen1.jpg" class="d-block w-100" alt="..." href="imgs/5.carpeta/Imagen1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/5.carpeta/Imagen2.jpg" class="d-block w-100" alt="..." href="imgs/5.carpeta/Imagen2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/5.carpeta/imagen3.jpg" class="d-block w-100" alt="..." href="imgs/5.carpeta/imagen3.jpg">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <div class="carrousel-bottom-container">
+                <div class="left"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carrousel-mid-bar">
+          <div class="sn ig"><a href=""><i class="fa fa-instagram" ></i></a></div>
+          <div class="sn fb"><a href=""><i class="fa fa-facebook-f"></i></a></div>
+          <div class="sn wp"><a href=""><i class="fa fa-whatsapp"></a></i></div>
+          <div class="ln cc"><a href="">Sitio Web</a></div>
+        </div>
+        <div class="carrousel-low-box">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quas nemo corrupti repellendus ducimus nostrum harum accusantium 
+            similique in rem dolorem, recusandae culpa est incidunt amet neque quo vero inventore quia voluptatibus! Possimus, nisi inventore 
+            assumenda amet earum qui sit. 
+          </p>
+        </div>
+      </div>
+      <!-- 6. card  -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" category="Música" subcategory="Hip Hop">
+        <div class="row mt-3 mb-2 mx-auto">
+          <div class="carrousel-container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/6.carpeta/Imagen1.jpg" class="d-block w-100" alt="..." href="imgs/6.carpeta/Imagen1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/6.carpeta/Imagen2.jpg" class="d-block w-100" alt="..." href="imgs/6.carpeta/Imagen2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/6.carpeta/imagen3.jpg" class="d-block w-100" alt="..." href="imgs/6.carpeta/imagen3.jpg">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <div class="carrousel-bottom-container">
+                <div class="left"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carrousel-mid-bar">
+          <div class="sn ig"><a href=""><i class="fa fa-instagram" ></i></a></div>
+          <div class="sn fb"><a href=""><i class="fa fa-facebook-f"></i></a></div>
+          <div class="sn wp"><a href=""><i class="fa fa-whatsapp"></a></i></div>
+          <div class="ln cc"><a href="">Sitio Web</a></div>
+        </div>
+        <div class="carrousel-low-box">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, inventore? Sit impedit, facere maiores voluptatibus 
+            asperiores quae eos sequi repellat repudiandae libero facilis doloremque temporibus, animi reiciendis explicabo cum? Exercitationem 
+            nemo eaque labore ipsum beatae, dolore sunt repudiandae.
+          </p>
+        </div>
+      </div>
+      <!-- 7. card  -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" category="Peliculas" subcategory="Aventura">
+        <div class="row mt-3 mb-2 mx-auto">
+          <div class="carrousel-container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/7.carpeta/Imagen1.jpg" class="d-block w-100" alt="..." href="imgs/7.carpeta/Imagen1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/7.carpeta/Imagen2.jpg" class="d-block w-100" alt="..." href="imgs/7.carpeta/Imagen2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/7.carpeta/imagen3.jpg" class="d-block w-100" alt="..." href="imgs/7.carpeta/imagen3.jpg">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <div class="carrousel-bottom-container">
+                <div class="left"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carrousel-mid-bar">
+          <div class="sn ig"><a href=""><i class="fa fa-instagram" ></i></a></div>
+          <div class="sn fb"><a href=""><i class="fa fa-facebook-f"></i></a></div>
+          <div class="sn wp"><a href=""><i class="fa fa-whatsapp"></a></i></div>
+          <div class="ln cc"><a href="">Sitio Web</a></div>
+        </div>
+        <div class="carrousel-low-box">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, earum maiores iusto quam quo odio minus quisquam vero unde? 
+            Aut minus in reiciendis maxime mollitia vero ullam eaque animi minima. Dolorem id est illo accusantium laborum cupiditate, 
+            pariatur asperiores modi.
+          </p>
+        </div>
+      </div>
+      <!-- 8. card  -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" category="Literatura" subcategory="Ciencia ficción">
+        <div class="row mt-3 mb-2 mx-auto">
+          <div class="carrousel-container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/8.carpeta/Imagen1.jpg" class="d-block w-100" alt="..." href="imgs/8.carpeta/Imagen1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/8.carpeta/Imagen2.jpg" class="d-block w-100" alt="..." href="imgs/8.carpeta/Imagen2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/8.carpeta/imagen3.jpg" class="d-block w-100" alt="..." href="imgs/8.carpeta/imagen3.jpg">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <div class="carrousel-bottom-container">
+                <div class="left"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carrousel-mid-bar">
+          <div class="sn ig"><a href=""><i class="fa fa-instagram" ></i></a></div>
+          <div class="sn fb"><a href=""><i class="fa fa-facebook-f"></i></a></div>
+          <div class="sn wp"><a href=""><i class="fa fa-whatsapp"></a></i></div>
+          <div class="ln cc"><a href="">Sitio Web</a></div>
+        </div>
+        <div class="carrousel-low-box">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, nostrum totam magni, explicabo tenetur, laborum eveniet 
+            eaque quam eos veritatis mollitia sed iste tempore perferendis perspiciatis obcaecati eum voluptatum? Deserunt impedit non 
+            natus expedita architecto sunt, sit repellat quod repudiandae!
+          </p>
+        </div>
+      </div>
+      <!-- 9. card -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" category="VideoJuegos" subcategory="Aventura">
+        <div class="row mt-3 mb-2 mx-auto">
+          <div class="carrousel-container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/9.carpeta/Imagen1.jpg" class="d-block w-100" alt="..." href="imgs/9.carpeta/Imagen1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/9.carpeta/Imagen2.jpg" class="d-block w-100" alt="..." href="imgs/9.carpeta/Imagen2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/9.carpeta/imagen3.jpg" class="d-block w-100" alt="..." href="imgs/9.carpeta/imagen3.jpg">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <div class="carrousel-bottom-container">
+                <div class="left"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carrousel-mid-bar">
+          <div class="sn ig"><a href=""><i class="fa fa-instagram" ></i></a></div>
+          <div class="sn fb"><a href=""><i class="fa fa-facebook-f"></i></a></div>
+          <div class="sn wp"><a href=""><i class="fa fa-whatsapp"></a></i></div>
+          <div class="ln cc"><a href="">Sitio Web</a></div>
+        </div>
+        <div class="carrousel-low-box">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, aperiam, animi eum nam in rem magni, iste aut sapiente quod 
+            ducimus consequatur quibusdam. Rem in placeat quis maiores reiciendis. Ex placeat itaque soluta natus corporis id maiores deserunt 
+            accusamus exercitationem!
+          </p>
+        </div>
+      </div>
+      <!-- 10. card -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" category="Música" subcategory="Electrónica">
+        <div class="row mt-3 mb-2 mx-auto">
+          <div class="carrousel-container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/10.carpeta/Imagen1.jpg" class="d-block w-100" alt="..." href="imgs/10.carpeta/Imagen1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/10.carpeta/Imagen2.jpg" class="d-block w-100" alt="..." href="imgs/10.carpeta/Imagen2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/10.carpeta/imagen3.jpg" class="d-block w-100" alt="..." href="imgs/10.carpeta/imagen3.jpg">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <div class="carrousel-bottom-container">
+                <div class="left"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carrousel-mid-bar">
+          <div class="sn ig"><a href=""><i class="fa fa-instagram" ></i></a></div>
+          <div class="sn fb"><a href=""><i class="fa fa-facebook-f"></i></a></div>
+          <div class="sn wp"><a href=""><i class="fa fa-whatsapp"></a></i></div>
+          <div class="ln cc"><a href="">Sitio Web</a></div>
+        </div>
+        <div class="carrousel-low-box">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam aliquid quae quisquam praesentium perferendis esse odio ratione. 
+            Nulla est sunt veritatis officiis, ullam enim eum ducimus ipsa reprehenderit ipsam provident esse quis fugit porro odio minus dicta 
+            harum voluptatem necessitatibus!
+          </p>
+        </div>
+      </div>
+      <!-- 11. card  -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" category="Peliculas" subcategory="Ciencia ficción">
+        <div class="row mt-3 mb-2 mx-auto">
+          <div class="carrousel-container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/11.carpeta/Imagen1.jpg" class="d-block w-100" alt="..." href="imgs/11.carpeta/Imagen1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/11.carpeta/Imagen2.jpg" class="d-block w-100" alt="..." href="imgs/11.carpeta/Imagen2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/11.carpeta/imagen3.jpg" class="d-block w-100" alt="..." href="imgs/11.carpeta/imagen3.jpg">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <div class="carrousel-bottom-container">
+                <div class="left"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carrousel-mid-bar">
+          <div class="sn ig"><a href=""><i class="fa fa-instagram" ></i></a></div>
+          <div class="sn fb"><a href=""><i class="fa fa-facebook-f"></i></a></div>
+          <div class="sn wp"><a href=""><i class="fa fa-whatsapp"></a></i></div>
+          <div class="ln cc"><a href="">Sitio Web</a></div>
+        </div>
+        <div class="carrousel-low-box">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus enim fugit necessitatibus! Excepturi temporibus 
+            suscipit commodi tenetur dolorum ratione atque repudiandae labore qui, quasi quisquam sapiente doloribus animi obcaecati 
+            eaque ad quibusdam! At necessitatibus, quisquam aliquid nulla dolorum optio aut.
+          </p>
+        </div>
+      </div>
+      <!-- 12. card -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" category="Literatura" subcategory="Poesía">
+        <div class="row mt-3 mb-2 mx-auto">
+          <div class="carrousel-container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/12.carpeta/Imagen1.jpg" class="d-block w-100" alt="..." href="imgs/12.carpeta/Imagen1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/12.carpeta/Imagen2.jpg" class="d-block w-100" alt="..." href="imgs/12.carpeta/Imagen2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/12.carpeta/imagen3.jpg" class="d-block w-100" alt="..." href="imgs/12.carpeta/imagen3.jpg">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <div class="carrousel-bottom-container">
+                <div class="left"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carrousel-mid-bar">
+          <div class="sn ig"><a href=""><i class="fa fa-instagram" ></i></a></div>
+          <div class="sn fb"><a href=""><i class="fa fa-facebook-f"></i></a></div>
+          <div class="sn wp"><a href=""><i class="fa fa-whatsapp"></a></i></div>
+          <div class="ln cc"><a href="">Sitio Web</a></div>
+        </div>
+        <div class="carrousel-low-box">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero numquam iusto soluta hic odit quos. Saepe sint delectus 
+            possimus. Itaque optio eius doloribus velit voluptatibus sed perferendis facilis reprehenderit voluptates! Ducimus placeat, 
+            fugit ex quis aliquam nisi enim accusantium illum.
+          </p>
+        </div>
+      </div>
+      <!-- 13. card -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" category="VideoJuegos" subcategory="Arcade">
+        <div class="row mt-3 mb-2 mx-auto">
+          <div class="carrousel-container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/13.carpeta/Imagen1.jpg" class="d-block w-100" alt="..." href="imgs/13.carpeta/Imagen1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/13.carpeta/Imagen2.jpg" class="d-block w-100" alt="..." href="imgs/13.carpeta/Imagen2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/13.carpeta/imagen3.jpg" class="d-block w-100" alt="..." href="imgs/13.carpeta/imagen3.jpg">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <div class="carrousel-bottom-container">
+                <div class="left"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carrousel-mid-bar">
+          <div class="sn ig"><a href=""><i class="fa fa-instagram" ></i></a></div>
+          <div class="sn fb"><a href=""><i class="fa fa-facebook-f"></i></a></div>
+          <div class="sn wp"><a href=""><i class="fa fa-whatsapp"></a></i></div>
+          <div class="ln cc"><a href="">Sitio Web</a></div>
+        </div>
+        <div class="carrousel-low-box">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat autem libero iure velit, assumenda maxime. Numquam eum iure, 
+            quasi autem laboriosam tempore harum? Consectetur dolor dignissimos quod, natus molestias voluptates asperiores nemo quo autem, 
+            laborum ducimus enim corporis deserunt laboriosam.
+          </p>
+        </div>
+      </div>
+      <!-- 14. card -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" category="Música" subcategory="Rap">
+        <div class="row mt-3 mb-2 mx-auto">
+          <div class="carrousel-container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/14.carpeta/Imagen1.jpg" class="d-block w-100" alt="..." href="imgs/14.carpeta/Imagen1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/14.carpeta/Imagen2.jpg" class="d-block w-100" alt="..." href="imgs/14.carpeta/Imagen2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/14.carpeta/imagen3.jpg" class="d-block w-100" alt="..." href="imgs/14.carpeta/imagen3.jpg">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <div class="carrousel-bottom-container">
+                <div class="left"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carrousel-mid-bar">
+          <div class="sn ig"><a href=""><i class="fa fa-instagram" ></i></a></div>
+          <div class="sn fb"><a href=""><i class="fa fa-facebook-f"></i></a></div>
+          <div class="sn wp"><a href=""><i class="fa fa-whatsapp"></a></i></div>
+          <div class="ln cc"><a href="">Sitio Web</a></div>
+        </div>
+        <div class="carrousel-low-box">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perferendis ullam autem, ea placeat magnam, sapiente eveniet 
+            perspiciatis vero, repellendus pariatur? Nobis, laudantium autem corporis eius perspiciatis eos quis suscipit illo, possimus 
+            sequi in nemo eveniet. Sunt reiciendis corrupti alias.
+          </p>
+        </div>
+      </div>
+      <!-- 15. card -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" category="Peliculas" subcategory="Comedia">
+        <div class="row mt-3 mb-2 mx-auto">
+          <div class="carrousel-container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/15.carpeta/Imagen1.jpg" class="d-block w-100" alt="..." href="imgs/15.carpeta/Imagen1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/15.carpeta/Imagen2.jpg" class="d-block w-100" alt="..." href="imgs/15.carpeta/Imagen2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/15.carpeta/imagen3.jpg" class="d-block w-100" alt="..." href="imgs/15.carpeta/imagen3.jpg">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <div class="carrousel-bottom-container">
+                <div class="left"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carrousel-mid-bar">
+          <div class="sn ig"><a href=""><i class="fa fa-instagram" ></i></a></div>
+          <div class="sn fb"><a href=""><i class="fa fa-facebook-f"></i></a></div>
+          <div class="sn wp"><a href=""><i class="fa fa-whatsapp"></a></i></div>
+          <div class="ln cc"><a href="">Sitio Web</a></div>
+        </div>
+        <div class="carrousel-low-box">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus deleniti a facere officia, consequatur incidunt neque harum 
+            repellat ab blanditiis fuga nesciunt aperiam dicta est, sint cum. Eaque aperiam maxime ratione aliquid modi. Magnam possimus accusantium 
+            alias aperiam aspernatur dolores.
+          </p>
+        </div>
+      </div>
+      <!-- 16. card -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" category="Literatura" subcategory="Talleres literarios">
+        <div class="row mt-3 mb-2 mx-auto">
+          <div class="carrousel-container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/16.carpeta/Imagen1.jpg" class="d-block w-100" alt="..." href="imgs/16.carpeta/Imagen1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/16.carpeta/Imagen2.jpg" class="d-block w-100" alt="..." href="imgs/16.carpeta/Imagen2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/16.carpeta/imagen3.jpg" class="d-block w-100" alt="..." href="imgs/16.carpeta/imagen3.jpg">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <div class="carrousel-bottom-container">
+                <div class="left"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carrousel-mid-bar">
+          <div class="sn ig"><a href=""><i class="fa fa-instagram" ></i></a></div>
+          <div class="sn fb"><a href=""><i class="fa fa-facebook-f"></i></a></div>
+          <div class="sn wp"><a href=""><i class="fa fa-whatsapp"></a></i></div>
+          <div class="ln cc"><a href="">Sitio Web</a></div>
+        </div>
+        <div class="carrousel-low-box">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ducimus consequatur maxime eum aperiam, nobis illo pariatur, nemo 
+            deleniti consequuntur ipsa repellat iure itaque hic ipsam quaerat totam dolorem commodi? Hic eveniet error et reprehenderit officia ea 
+            cumque quo temporibus!
+          </p>
+        </div>
+      </div>
+      <!-- 17. card -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" category="VideoJuegos" subcategory="Sumlación">
+        <div class="row mt-3 mb-2 mx-auto">
+          <div class="carrousel-container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/17.carpeta/Imagen1.jpg" class="d-block w-100" alt="..." href="imgs/17.carpeta/Imagen1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/17.carpeta/Imagen2.jpg" class="d-block w-100" alt="..." href="imgs/17.carpeta/Imagen2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/17.carpeta/imagen3.jpg" class="d-block w-100" alt="..." href="imgs/17.carpeta/imagen3.jpg">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <div class="carrousel-bottom-container">
+                <div class="left"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carrousel-mid-bar">
+          <div class="sn ig"><a href=""><i class="fa fa-instagram" ></i></a></div>
+          <div class="sn fb"><a href=""><i class="fa fa-facebook-f"></i></a></div>
+          <div class="sn wp"><a href=""><i class="fa fa-whatsapp"></a></i></div>
+          <div class="ln cc"><a href="">Sitio Web</a></div>
+        </div>
+        <div class="carrousel-low-box">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cum provident earum mollitia placeat ad eligendi, nihil quasi id fugit 
+            omnis voluptatem rem architecto aperiam tempora necessitatibus? Distinctio ab amet dignissimos. Dolore quos quasi modi beatae unde, 
+            velit ducimus molestias?
+          </p>
+        </div>
+      </div>
+      <!-- 18. card -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" category="Música" subcategory="Metal">
+        <div class="row mt-3 mb-2 mx-auto">
+          <div class="carrousel-container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/18.carpeta/Imagen1.jpg" class="d-block w-100" alt="..." href="imgs/18.carpeta/Imagen1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/18.carpeta/Imagen2.jpg" class="d-block w-100" alt="..." href="imgs/18.carpeta/Imagen2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/18.carpeta/imagen3.jpg" class="d-block w-100" alt="..." href="imgs/18.carpeta/imagen3.jpg">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <div class="carrousel-bottom-container">
+                <div class="left"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carrousel-mid-bar">
+          <div class="sn ig"><a href=""><i class="fa fa-instagram" ></i></a></div>
+          <div class="sn fb"><a href=""><i class="fa fa-facebook-f"></i></a></div>
+          <div class="sn wp"><a href=""><i class="fa fa-whatsapp"></a></i></div>
+          <div class="ln cc"><a href="">Sitio Web</a></div>
+        </div>
+        <div class="carrousel-low-box">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi laudantium nostrum ipsum earum, quas vero nemo laboriosam obcaecati 
+            sed exercitationem aperiam deserunt dolores magni aliquam! Non soluta maxime ad? Consequuntur velit eveniet, sunt modi reiciendis 
+            reprehenderit. Animi quidem nulla ea.
+          </p>
+        </div>
+      </div>
+      <!-- 19. card  -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" category="Peliculas" subcategory="Drama">
+        <div class="row mt-3 mb-2 mx-auto">
+          <div class="carrousel-container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/19.carpeta/Imagen1.jpg" class="d-block w-100" alt="..." href="imgs/19.carpeta/Imagen1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/19.carpeta/Imagen2.jpg" class="d-block w-100" alt="..." href="imgs/19.carpeta/Imagen2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/19.carpeta/imagen3.jpg" class="d-block w-100" alt="..." href="imgs/19.carpeta/imagen3.jpg">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <div class="carrousel-bottom-container">
+                <div class="left"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carrousel-mid-bar">
+          <div class="sn ig"><a href=""><i class="fa fa-instagram" ></i></a></div>
+          <div class="sn fb"><a href=""><i class="fa fa-facebook-f"></i></a></div>
+          <div class="sn wp"><a href=""><i class="fa fa-whatsapp"></a></i></div>
+          <div class="ln cc"><a href="">Sitio Web</a></div>
+        </div>
+        <div class="carrousel-low-box">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt mollitia aliquam minus debitis quod sed facere, quae animi quas 
+            architecto maxime facilis amet neque cum suscipit consectetur expedita eos assumenda maiores repellendus, fuga repudiandae, eum 
+            ducimus. Ipsam praesentium necessitatibus enim!
+          </p>
+        </div>
+      </div>
+      <!-- 20. card -->
+      <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12" category="Literatura" subcategory="Historia">
+        <div class="row mt-3 mb-2 mx-auto">
+          <div class="carrousel-container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imgs/20.carpeta/Imagen1.jpg" class="d-block w-100" alt="..." href="imgs/20.carpeta/Imagen1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/20.carpeta/Imagen2.jpg" class="d-block w-100" alt="..." href="imgs/20.carpeta/Imagen2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img src="imgs/20.carpeta/imagen3.jpg" class="d-block w-100" alt="..." href="imgs/20.carpeta/imagen3.jpg">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <div class="carrousel-bottom-container">
+                <div class="left"></div>
+            </div>
+          </div>
+        </div>
+        <div class="carrousel-mid-bar">
+          <div class="sn ig"><a href=""><i class="fa fa-instagram" ></i></a></div>
+          <div class="sn fb"><a href=""><i class="fa fa-facebook-f"></i></a></div>
+          <div class="sn wp"><a href=""><i class="fa fa-whatsapp"></a></i></div>
+          <div class="ln cc"><a href="">Sitio Web</a></div>
+        </div>
+        <div class="carrousel-low-box">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, praesentium consequatur iste assumenda asperiores sunt, 
+            voluptatum, veritatis nesciunt excepturi fugit dolorum ipsam perferendis deleniti. Libero nulla ut delectus! Voluptas dolore 
+            eligendi reprehenderit saepe mollitia asperiores.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
